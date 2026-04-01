@@ -1,0 +1,81 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --erp-primary: #4361ee;
+    --erp-sidebar: #191c24;
+    --erp-sidebar-hover: #0f1015;
+    --erp-bg: #f8f9fc;
+    --erp-text: #5a5c69;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--erp-bg);
+    color: var(--erp-text);
+}
+
+/* Auth Pages */
+.auth-bg {
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+}
+.login-card {
+    border: none;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+
+/* Sidebar Layout */
+.erp-body {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--erp-sidebar) !important;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+    color: #a5a5b0;
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: #fff;
+    background-color: var(--erp-sidebar-hover);
+    border-left-color: var(--erp-primary);
+}
+
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.3s;
+    padding-bottom: 50px;
+}
+
+/* Cards & UI Elements */
+.card { border-radius: 12px; }
+.kpi-card { transition: transform 0.2s; }
+.kpi-card:hover { transform: translateY(-5px); }
+
+.custom-gradient-card {
+    background: linear-gradient(135deg, #7209b7 0%, #3f37c9 100%);
+}
+
+.table th {
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+.table td { vertical-align: middle; }
